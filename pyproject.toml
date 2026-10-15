@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lua-virtualizer"
+version = "1.0.0"
+description = "Lua Virtualizer Web API interface can help you obfuscate and protect Lua .lua source code against analysis, reverse engineering and technology theft. Lua Virtualizer provides advanced Lua source code parsing based on AST trees, multiple advanced obfuscation, virtualization and protection strategies are available."
+readme = "README.md"
+requires-python = ">=3"
+license = "Apache-2.0"
+authors = [
+    { name = "Bartosz Wójcik", email = "support@pelock.com" },
+]
+keywords = [
+    "lua",
+    "obfuscator",
+    "virtualizer",
+    "pelock",
+    "protection",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Security",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "requests",
+]
+
+[project.urls]
+Homepage = "https://www.pelock.com/products/lua-virtualizer"
+"Lua-Virtualizer" = "https://github.com/PELock/Lua-Virtualizer"
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["."]
